@@ -2,7 +2,8 @@
   "name": "neafisha",
   "version": "0.0.1",
   "engines": {
-    "node": "16.x"
+    "node": "16.x",
+    "npm": "6.x"
   },
   "description": "Handbill - university project",
   "author": "Handbill team",

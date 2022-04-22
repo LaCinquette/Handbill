@@ -8,6 +8,16 @@ export class AppController {
   @Get()
   @Render('index')
   root(): any {
-    //
+    this.appService.logVisit();
+  }
+
+  @Get('counter')
+  async counter(): Promise<any> {
+    const countDownloads = await this.appService.showCountDownloads();
+    const countVisits = await this.appService.showCountVisits();
+    return {
+      downloadsCount: countDownloads,
+      visitsCount: countVisits
+    };
   }
 }

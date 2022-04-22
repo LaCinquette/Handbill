@@ -1,8 +1,11 @@
 {
   "name": "neafisha",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "engines": {
+    "node": "16.x"
+  },
+  "description": "Handbill - university project",
+  "author": "Handbill team",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

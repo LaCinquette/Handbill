@@ -6,24 +6,98 @@
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|PT+Sans:400,400i,700,700i">
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="JS/swiper.js"></script>
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <title>Eco</title>
 </head>
 <body>
 <div class="page">
     <div class="top">
         <div class="top-inf">
-            <a>Приложение</a>
+
+            <div id="navicon">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="drawer">
+                    <li><a href="#">Мероприятия</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Стендап</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </div>
+
+
+
         </div>
-        <div class="top-inf">
+
+
+
+        <div class="top-inf top-inf-center">
             <button type="submit" class="form_button" id="download_button">Скачать</button>
+
         </div>
+
+
     </div>
+
+    <div class = "b-line">
+        <div class = "b-line-event">
+            <a class = "event_title">Ближайшие события</a>
+        </div>
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="image/3.jpg"  >
+            </div>
+            <div class="swiper-slide">
+                <img src="image/5.jpg" >
+            </div>
+            <div class="swiper-slide">
+                <img src="image/6.jpg" >
+            </div>
+            <div class="swiper-slide">
+                <img src="image/7.jpg" >
+            </div>
+            <div class="swiper-slide">
+                <img src="image/8.jpg" >
+            </div>
+            <div class="swiper-slide">
+                <img src="image/9.jpg" >
+            </div>
+            <div class="swiper-slide">
+                <img src="image/10.jpg" >
+            </div>
+            <div class="swiper-slide">
+                <img src="image/11.jpg" >
+            </div>
+            <div class="swiper-slide">
+                <img src="image/12.jpg" >
+            </div>
+        </div>
+        <div class="swiper-pagination" id = "swiper-pagination_g"></div>
+
+        <div class="swiper-button-prev " id = "button_color_g_prev"></div>
+        <div class="swiper-button-next " id = "button_color_g_next"></div>
+
+    </div>
+    </div>
+
     <div class="u-body">
         <section class="u-section-1" id="sec-18b5">
+
+
             <div class="u-clearfix u-sheet u-sheet-1">
                 <h1 class="u-text">События</h1>
+
                 <div class="u-line"></div>
 
                 <div class="u-gallery">
@@ -31,7 +105,10 @@
 
                         <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
                             <div class="u-back-slide" data-image-width="613" data-image-height="626">
+                                <figure>
                                 <img class="u-back-image u-expanded" src="./image/1.jpg">
+                                <p class="u-gallery-text">4 дня назад</p>
+                                </figure>
                             </div>
                             <div class="u-over-slide u-shading u-over-slide-1">
                                 <h3 class="u-gallery-heading"></h3>
@@ -42,6 +119,7 @@
                         <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
                             <div class="u-back-slide">
                                 <img class="u-back-image u-expanded" src="./image/2.jpg">
+                                <p class="u-gallery-text">4 дня назад</p>
                             </div>
                             <div class="u-over-slide u-shading u-over-slide-2">
                                 <h3 class="u-gallery-heading"></h3>
@@ -52,6 +130,7 @@
                         <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
                             <div class="u-back-slide" data-image-width="626" data-image-height="442">
                                 <img class="u-back-image u-expanded" src="./image/3.jpg">
+                                <p class="u-gallery-text">4 дня назад</p>
                             </div>
                             <div class="u-over-slide u-shading u-over-slide-3">
                                 <h3 class="u-gallery-heading"></h3>
@@ -69,11 +148,62 @@
                             </div>
                         </div>
 
+                        <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
+                            <div class="u-back-slide" data-image-width="1199" data-image-height="800">
+                                <img class="u-back-image u-expanded" src="./image/13.jpg">
+                            </div>
+                            <div class="u-over-slide u-shading u-over-slide-4">
+                                <h3 class="u-gallery-heading"></h3>
+                                <p class="u-gallery-text"></p>
+                            </div>
+                        </div>
+
+                        <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
+                            <div class="u-back-slide" data-image-width="1199" data-image-height="800">
+                                <img class="u-back-image u-expanded" src="./image/12.jpg">
+                            </div>
+                            <div class="u-over-slide u-shading u-over-slide-4">
+                                <h3 class="u-gallery-heading"></h3>
+                                <p class="u-gallery-text"></p>
+                            </div>
+                        </div>
+                        <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
+                            <div class="u-back-slide" data-image-width="1199" data-image-height="800">
+                                <img class="u-back-image u-expanded" src="./image/10.jpg">
+                            </div>
+                            <div class="u-over-slide u-shading u-over-slide-4">
+                                <h3 class="u-gallery-heading"></h3>
+                                <p class="u-gallery-text"></p>
+                            </div>
+                        </div>
+                        <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
+                            <div class="u-back-slide" data-image-width="1199" data-image-height="800">
+                                <img class="u-back-image u-expanded" src="./image/14.jpg">
+                            </div>
+                            <div class="u-over-slide u-shading u-over-slide-4">
+                                <h3 class="u-gallery-heading"></h3>
+                                <p class="u-gallery-text"></p>
+                            </div>
+                        </div>
+                        <div class="u-effect-fade u-effect-hover-zoom u-gallery-item">
+                            <div class="u-back-slide" data-image-width="1199" data-image-height="800">
+                                <img class="u-back-image u-expanded" src="./image/15.jpg">
+                            </div>
+                            <div class="u-over-slide u-shading u-over-slide-4">
+                                <h3 class="u-gallery-heading"></h3>
+                                <p class="u-gallery-text"></p>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+
     <footer class="footer">
         <ul >
             <li class="phone">

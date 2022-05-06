@@ -1,4 +1,4 @@
-import { Controller, Get, Render } from '@nestjs/common';
+import { Controller, Get, Post, Render } from '@nestjs/common';
 import { DownloadService } from './download.service';
 
 @Controller('download')
@@ -7,7 +7,12 @@ export class DownloadController {
 
     @Get('')
     @Render('download')
-    download(): any {
+    downloadByGet(): any {
+        this.downloadService.createDownload({});
+    }
+
+    @Post('')
+    downloadByPost(): any {
         this.downloadService.createDownload({});
     }
 }

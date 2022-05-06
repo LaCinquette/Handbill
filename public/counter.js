@@ -6,6 +6,6 @@ btn.addEventListener("click", () => {
 
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "/download");
-    // xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send();
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({}));
 });
